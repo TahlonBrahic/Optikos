@@ -16,5 +16,20 @@ namespace Optikos
         {
             InitializeComponent();
         }
+
+        private void mlModelsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void voiceAssistantButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pythonGamesButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
