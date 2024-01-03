@@ -27,7 +27,8 @@ namespace Optikos
 
         private void voiceAssistantButton_Click(object sender, EventArgs e)
         {
-           
+           VoiceAssistantLauncher voiceAssistantLauncher = new VoiceAssistantLauncher();
+           voiceAssistantLauncher.Show();
         }
 
         private void pythonGamesButton_Click(object sender, EventArgs e)
