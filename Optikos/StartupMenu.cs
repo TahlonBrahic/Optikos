@@ -16,39 +16,24 @@ namespace Optikos
         public StartupMenu()
         {
             InitializeComponent();
-            InitializeUI('UIMode');
         }
 
-        private void InitializeUI(string key)
-        {
-            try
-            {
-                var uiMode = ConfigurationManager.AppSettings[key];
-                if (uiMode == "dark")
-                {
-                    this.ForeColor.FromArgb(47 ,54, 64)
-                    this.BackColor.FromArgb(245, 246, 250)
-                }
-            }
-            catch (Exception ex) 
-            {
-                throw;
-            }
-        }
 
         private void mlModelsButton_Click(object sender, EventArgs e)
         {
-            mlModelsButton.ForeColor = Color.Purple;
+            MachineLearningModelsViewer machineLearningModelsViewer = new MachineLearningModelsViewer();
+            machineLearningModelsViewer.Show();
         }
 
         private void voiceAssistantButton_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void pythonGamesButton_Click(object sender, EventArgs e)
         {
-
+            PythonGamesLauncher pythonGamesLauncher = new PythonGamesLauncher();
+            pythonGamesLauncher.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)

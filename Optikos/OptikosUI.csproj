@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MachineLearningModelsViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachineLearningModelsViewer.Designer.cs">
+      <DependentUpon>MachineLearningModelsViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PythonGamesLauncher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PythonGamesLauncher.Designer.cs">
+      <DependentUpon>PythonGamesLauncher.cs</DependentUpon>
+    </Compile>
     <Compile Include="StartupMenu.cs">
       <SubType>Form</SubType>
     </Compile>
